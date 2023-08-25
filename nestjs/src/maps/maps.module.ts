@@ -13,7 +13,7 @@ import { DirectionsService } from './directions/directions.service';
       provide: GoogleMapsClient,
       useValue: new GoogleMapsClient(),
     },
-    DirectionsService
+    DirectionsService,
   ],
   exports: [DirectionsService],
 })

@@ -16,7 +16,7 @@ export class RoutesController {
   @Get()
   async findAll() {
     const routes = await this.routesService.findAll();
-    return routes.map(route => new RouteSerializer(route))
+    return routes.map((route) => new RouteSerializer(route))
   }
 
   @Get(':id')
