@@ -1,0 +1,15 @@
+### pegar as rotas
+GET http://localhost:3000/api/routes
+
+
+### cadastrar uma nova rota
+POST http://localhost:3000/api/routes
+Content-Type: application/json
+
+{
+    "name": "route test 1",
+    "source_id": "EkZBdi4gR292LiBWYWxhZGFyZXMsIDEwMDAgLSBTYW50byBBZm9uc28sIEJldGltIC0gTUcsIDMyNjIzLTU3NSwgQnJhc2lsIjESLwoUChIJja7gMwfdpgARgN9V_RFivpEQ6AcqFAoSCfmsiD4H3aYAEdRlj37c-uzz",
+    "destination_id": "EkZBdi4gR292LiBWYWxhZGFyZXMsIDEwMzAgLSBTYW50byBBZm9uc28sIEJldGltIC0gTUcsIDMyNjIzLTY5MCwgQnJhc2lsIjESLwoUChIJTbH1swDdpgARYOtQ1DjwovIQhggqFAoSCfmsiD4H3aYAEdRlj37c-uzz"
+}
+
+

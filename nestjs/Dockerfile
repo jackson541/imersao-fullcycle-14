@@ -4,6 +4,13 @@ RUN apt-get update -y && apt-get install -y openssl
 
 WORKDIR /home/node/app
 
-USER node
+COPY . .
 
-CMD [ "tail", "-f", "/dev/null"	 ]
+RUN npm install
+
+RUN npx prisma generate
+
+RUN npm run build
+
+# Start the server using the production build
+CMD [ "node", "/home/node/app/dist/main.js" ]
